@@ -1,3 +1,6 @@
+shared:
+  image: node:18
+
 jobs:
   main:
     template: sd/noop
