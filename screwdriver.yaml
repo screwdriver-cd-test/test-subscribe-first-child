@@ -3,5 +3,7 @@ shared:
 
 jobs:
   main:
+    annotations:
+      screwdriver.cd/buildPeriodically: "*/5 * * * *"
     template: sd/noop
     requires: [~pr, ~commit]
