@@ -4,6 +4,6 @@ shared:
 jobs:
   main:
     annotations:
-      screwdriver.cd/buildPeriodically: "*/5 * * * *"
+      screwdriver.cd/buildPeriodically: "H * * * *"
     template: sd/noop
     requires: [~pr, ~commit]
