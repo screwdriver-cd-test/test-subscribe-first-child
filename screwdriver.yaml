@@ -2,6 +2,6 @@ shared:
   image: node:20
 
 jobs:
-  first:
+  second:
     template: sd/noop
     requires: [~pr, ~commit]
