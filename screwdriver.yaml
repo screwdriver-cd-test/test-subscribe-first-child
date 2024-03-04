@@ -10,4 +10,5 @@ jobs:
         echo "true"
         exit 1
     - teardown-step:
+        echo $(meta get meta.status)
         meta set meta.status.build '{"status":"SUCCESS","message":"Coverage is above 80%."}'
