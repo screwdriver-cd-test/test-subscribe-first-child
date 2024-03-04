@@ -14,3 +14,4 @@ jobs:
         meta set meta.status.first '{"status":"SUCCESS","message":"Coverage is above 80%."}'
   first:
     template: sd/noop
+    requires: [second]
