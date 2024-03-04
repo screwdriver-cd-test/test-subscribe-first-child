@@ -5,3 +5,9 @@ jobs:
   second:
     template: sd/noop
     requires: [~pr, ~commit]
+    steps:
+    - noop: |
+        echo "true"
+        exit 1
+    - teardown-step:
+        meta set meta.status.build '{"status":"SUCCESS","message":"Coverage is above 80%."}'
