@@ -8,7 +8,6 @@ jobs:
     steps:
     - noop: |
         echo "true"
-        exit 1
     - teardown-step:
         echo $(meta get meta.build_status)
         meta set meta.status.first '{"status":"SUCCESS","message":"Coverage is above 80%."}'
