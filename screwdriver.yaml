@@ -7,7 +7,7 @@ jobs:
     requires: [~pr, ~commit]
     steps:
     - noop: |
-        echo "true"
+        echo "world"
     - teardown-step: |
         echo $(meta get meta.build_status)
         meta set meta.status.first '{"status":"SUCCESS","message":"Coverage is above 80%."}'
