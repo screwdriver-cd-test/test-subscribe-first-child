@@ -5,9 +5,6 @@ jobs:
   second:
     template: sd/noop@latest
     requires: [~pr, ~commit]
-    annotations:
-        screwdriver.cd/buildPeriodically:
-        screwdriver.cd/displayName:
     steps:
     - noop: |
         echo "true"
