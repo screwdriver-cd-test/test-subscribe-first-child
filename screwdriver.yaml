@@ -3,10 +3,10 @@ shared:
 
 jobs:
   second:
-    template: sd/noop
+    template: sd/noop@latest
     requires: [~pr, ~commit]
     annotations:
-      screwdriver.cd/buildPeriodically: ''
+        screwdriver.cd/buildPeriodically:
     steps:
     - noop: |
         echo "true"
@@ -14,5 +14,5 @@ jobs:
         echo $(meta get meta.build_status)
         meta set meta.status.first '{"status":"SUCCESS","message":"Coverage is above 80%."}'
   first:
-    template: sd/noop
+    template: sd/noop@latest
     requires: [second]
