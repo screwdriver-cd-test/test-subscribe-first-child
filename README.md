@@ -1,3 +1,3 @@
-## test-invalid-pr-config
+## test-pr-config
 
-- test-invalid-pr-config
+This is another repo for fun. 
