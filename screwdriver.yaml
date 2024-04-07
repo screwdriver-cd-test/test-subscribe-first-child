@@ -3,7 +3,7 @@ shared:
 
 subscribe:
     scmUrls:
-        - https://github.com/VonnyJap/test-pr-config-second.git: ['~commit', '~pr']
+        - https://github.com/VonnyJap/test-pr-config-second.git: ['~commit']
 jobs:
   random:
     template: sd/noop@latest
